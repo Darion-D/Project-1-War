@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="btns">
+      <button class="rules">Rules</button>
+      <button class="play">Play</button>
+    </div>
+    <div class="modal-container ">
+        <div class="modal">
+            <h2>Rules of War</h2>
+            <p>
+                The deck is divided evenly, with each player receiving 26 cards, dealt one at a time, face down. Anyone may deal first. Each player places their stack of cards face down, in front of them. Each player turns up a card at the same time and the player with the higher card takes both cards and puts them, face down, on the bottom of his stack.
+
+                If the cards are the same rank, it is War. Each player turns up three cards face down and one card face up. The player with the higher cards takes both piles (10 cards). If the turned-up cards are again the same rank, each player places another four cards face down and turns another card face up. The player with the higher card takes all 18 cards, and so on.
+            </p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+    <h1>War! The Card Game</h1>
+    <div class="gameboard hidden">
+      <div class="player-container">
+        <div class="player-title">Player</div>
+        <div class="test-cards">
+          <div class="player-deck">26</div>
+          <div class="player-card">
+            <div class="p-card-value-top">7</div>
+            <div class="p-card-value-bottom">7</div>
+            <div class="p-card-suit">♠</div>
+          </div>
+        </div>
+      </div>
+      <h3>Player wins</h3>
+      <div class="dealer-container">
+        <div class="dealer-title">Dealer</div>
+        <div class="test-cards">
+          <div class="dealer-card">
+            <div class="d-card-value-top">7</div>
+            <div class="d-card-value-bottom">7</div>
+            <div class="d-card-suit">♠</div>
+          </div>
+          <div class="dealer-deck">26</div>
+        </div>
+      </div>
+    </div>
+    <button class="draw">Draw</button>
+  </body>
+</html>
